@@ -19,6 +19,21 @@ The data is sourced from https://www.kaggle.com/datasets/masoudnickparvar/brain-
 ### Final integrated architecture 
 ![image](https://github.com/GauravYS/Master-Project-Group-2/assets/116845183/71931ebf-8b26-484b-8ddf-5edfaff2da12)
 
+**Benefits** - Comparable accuracy to state-of-the-art pretrained models while being **3x** faster in terms of train time. 
+
+## Explainable AI methodologies 
+### Local Interpretable Model-Agnostic Explanations (LIME)
+![image](https://github.com/GauravYS/Master-Project-Group-2/assets/116845183/429c1d59-6b92-4cc8-b315-d461f67af729)
+### Shapley Additive Explanations (SHAP)
+![image](https://github.com/GauravYS/Master-Project-Group-2/assets/116845183/6c97b4f9-d485-4dc6-8a2e-d018a83ee042)
+
+## DeClEx Web Application 
+ **Project Link** - http://34.16.167.233:3000/
+
+ 
+
+
+
 
 
 
