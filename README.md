@@ -52,7 +52,7 @@ curl --location 'http://34.16.167.233:8000/images' \
 We used JavaScript, HTML and CSS for our frontend. 
 
 ### Hosting the application on GCP 
-1. Create an Cloud Engine, with suffient memory, ideally you can use **c2-standard-4** machine type. CPU platform is **Intel Cascade Lake**. Make sure you have python3.9 and above in the instance created.
+1. Create a Cloud Engine, with suffient memory, ideally you can use **c2-standard-4** machine type. CPU platform is **Intel Cascade Lake**. Make sure you have python-3.9 and above in the instance created.
 2. Check python version using bellow command
 ``` 
 python3 --version
