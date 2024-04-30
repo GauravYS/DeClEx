@@ -61,7 +61,6 @@ python3 --version
 ``` 
 sudo apt install git-all
 sudo apt install git-lfs
-git clone https://github.com/saicharan19995/Brain_Tumor_Analysis.git
 ```
 4. Setup virual python env and activate it
 ```
