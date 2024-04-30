@@ -13,7 +13,7 @@ The data is sourced from https://www.kaggle.com/datasets/masoudnickparvar/brain-
 ![image](https://github.com/GauravYS/Master-Project-Group-2/assets/116845183/86023eab-9c25-4ea1-ab42-bd91e776297f)  ![image](https://github.com/GauravYS/Master-Project-Group-2/assets/116845183/1b3e91df-b89f-4b18-aabe-afc36624c81d)
 
 ## CNN + Spatial Attention 
-### Spatial Attention Module ]
+### Spatial Attention Module
 ![image](https://github.com/GauravYS/Master-Project-Group-2/assets/116845183/bd08bbe2-595b-4f35-90aa-ab17ed3e9897)
 
 ### Final integrated architecture 
