@@ -32,7 +32,7 @@ The data is sourced from https://www.kaggle.com/datasets/masoudnickparvar/brain-
  ### Backend 
  We have created 3 different APIs,
 1. /analyse - this API is used to get basic info like predicted class and the probabilities.
-2. /complete_analysis -  this API performs all the setps involved in a segmentaion of lime and shap values and responds with path those images.
+2. /complete_analysis -  this API performs all the setps involved in segmentaion of lime and shap values and responds with respective paths.
 3. /images - this API will return the image, for this file: "" in a json body will contain the path provided by above api to get the images from the server.
 Examples:
 ```
@@ -52,7 +52,7 @@ curl --location 'http://34.16.167.233:8000/images' \
 We used JavaScript, HTML and CSS for our frontend. 
 
 ### Hosting the application on GCP 
-1. Create an Clooud Engine, with suffient memory, ideally you can use **c2-standard-4** machine type. CPU platform is **Intel Cascade Lake**. Make sure you have python3.9 and above in the instance created.
+1. Create an Cloud Engine, with suffient memory, ideally you can use **c2-standard-4** machine type. CPU platform is **Intel Cascade Lake**. Make sure you have python3.9 and above in the instance created.
 2. Check python version using bellow command
 ``` 
 python3 --version
