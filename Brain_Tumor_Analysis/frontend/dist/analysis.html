@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Analysis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbarWrapper">
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="logo.png" alt="MRI Analysis Logo" class="navbar-logo" />
+          <span class="tagline">DeClEx</span>
+        </div>
+        <ul class="navlist">
+          <li><a href="">Home</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li>
+            <a
+              href="https://github.com/GauravYS/Master-Project-Group-2/tree/main"
+              target="_blank"
+              >Project Link</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="wrapper">
+      <div class="heading">
+        <h1>Brain MRI Image Analysis</h1>
+        <p>
+          Upload MRI brain images to get the prediction as well as explantaion
+          to the prediction.
+        </p>
+      </div>
+      <div class="input">
+        <div class="takeInput">
+          <p>Choose MRI Image</p>
+          <input type="file" id="imageInput" accept="image/*" />
+          <br />
+          <button class="uploadBtn" onclick="uploadImage()">
+            Upload Image
+          </button>
+          <div id="imageContainer">
+            <img id="uploadedImage" src="" alt="Uploaded Image" />
+          </div>
+        </div>
+        <div class="analyseBtnWrapper">
+          <button class="analyseBtn" onclick="detailedAnalysis()">
+            Prediction
+          </button>
+          <button class="analyseBtn" onclick="analyzeImage()">
+            Detailed Analysis
+          </button>
+
+          <br />
+        </div>
+        <div class="predictedWrapper">
+          <div class="custom">
+            <h3>Analysis</h3>
+            <p>
+              The combination of all below <br />
+              shown techniques can help
+              <br />doctors to make an <br />informed decision.
+            </p>
+            <div class="predicted">Predicted:</div>
+          </div>
+        </div>
+      </div>
+      <div class="results">
+        <div id="analysisResult"></div>
+      </div>
+    </div>
+
+    <!-- Inside the <body> tag, preferably before the script tag -->
+    <div id="loadingSpinner" style="display: none">
+      <p>
+        Loading... <br />
+        Running ML models
+      </p>
+    </div>
+
+    <!-- *************************************POPUP*********************************************************** -->
+    <!-- Add this section within the <body> tag of your analysis.html -->
+    <div id="predictionPopup" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Prediction Results</h2>
+        <p class="predicted">Predicted:</p>
+        <table id="probabilitiesTable">
+          <thead>
+            <tr>
+              <th>Condition</th>
+              <th>Probability (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Probabilities will be inserted here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

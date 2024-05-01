@@ -1,0 +1,317 @@
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: -5px;
+}
+
+.wrapper {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper .heading {
+  text-align: center;
+}
+.wrapper .takeInput {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.19), 0 20px 20px rgba(0, 0, 0, 0.23);
+}
+.wrapper .takeInput p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.input {
+  padding-top: 50px;
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: center;
+}
+
+.predicted {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.predictedWrapper {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.19), 0 20px 20px rgba(0, 0, 0, 0.23);
+  margin-left: 100px;
+}
+
+.custom {
+  padding: 20px;
+}
+
+.wrapper .analyseBtn {
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin-left: 100px;
+  background-color: white;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.wrapper .analyseBtn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.wrapper .analyseBtnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.wrapper .uploadBtn {
+  margin: 10px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.wrapper #uploadedImage {
+  display: none;
+  text-align: center;
+  padding-top: 20px;
+  height: 300px;
+  width: 300px;
+}
+
+.wrapper .results #analysisResult img {
+  height: 350px;
+}
+
+.results {
+  padding-top: 50px;
+}
+
+.result-item {
+  display: flex;
+}
+
+.result-item p {
+  align-content: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+#loadingSpinner {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Make sure it's above other content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.693);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#loadingSpinner p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.navbarWrapper {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  position: relative; /* This enables absolute positioning relative to this container */
+  height: 70px; /* Adjust the height as needed */
+  background-color: #000; /* Or any other color you prefer */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 50px; /* Adjust logo size as needed */
+}
+
+.tagline {
+  margin-left: 10px; /* Adjust spacing between logo and tagline */
+  color: #fff;
+  font-size: 1.5em; /* Adjust tagline size as needed */
+}
+
+.navlist {
+  position: absolute;
+  top: 2;
+  right: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  margin-right: 60px;
+}
+
+.navlist li {
+  margin-left: 50px; /* Adjust spacing between nav items */
+}
+
+.navlist li a {
+  text-decoration: none;
+  color: #fff; /* Adjust link color as needed */
+  font-size: 1em; /* Adjust font size as needed */
+}
+
+.navlist li a:hover {
+  color: #eed64f; /* Adjust hover color as needed */
+}
+
+/* ******************************** Team Page ******************************** */
+
+/* Add this to your existing style.css file */
+
+/* Style for team section */
+.team-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  background-color: #ffffff; /* Card background color */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.19), 0 20px 20px rgba(0, 0, 0, 0.23);
+  width: 300px; /* Card width */
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px; /* Rounded corners for card */
+  /* border: 2px solid black; */
+}
+
+.teamBody {
+  background-color: #000;
+}
+
+.card .team-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
+  padding: 20px;
+}
+
+.team-info {
+  padding: 15px;
+}
+
+.team-info h2 {
+  margin: 10px 0;
+  color: #333; /* Name color */
+}
+
+.team-info p {
+  color: #666; /* Description color */
+  font-size: 0.9em;
+}
+
+.teamHeading h2 {
+  text-align: center;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 40px;
+  color: white;
+}
+
+/* ******** POP UP ******************************** */
+/* Example CSS for the popup */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add this to your style.css file */
+
+/* Style the table to add borders to rows and cells */
+#probabilitiesTable {
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table */
+  width: 80%; /* Adjust width as needed */
+}
+
+#probabilitiesTable th,
+#probabilitiesTable td {
+  border: 1px solid #ddd; /* Add a border to each cell */
+  text-align: center;
+  padding: 8px;
+}
+
+/* Style the table header */
+#probabilitiesTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #f2f2f2; /* Background color for headers */
+  color: black;
+}
+
+/* Remove extra space and center the modal content */
+.modal-content {
+  padding: 20px;
+  border: 1px solid #888;
+  margin: 10% auto; /* Reduce top margin and center */
+}
